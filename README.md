@@ -13,6 +13,10 @@
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
+```
+说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分大中型项目中必须的插件服务和项目逻辑架构
+```
+
 ## Build Setup
 
 ``` bash
@@ -65,5 +69,5 @@ src：项目源码。开发的时候代码写在这里。
  - 国际化
  - 封装fetch服务
  - 引入图表插件
- - 大项目打包方案webpack split
+ - 大项目打包方案webpack code-splitting
 
