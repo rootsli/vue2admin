@@ -4,12 +4,14 @@
 
 #### 已实现功能：
 - 基础框架
-- 登录功能
+- 登录功能（利用vuex与localstorage的持久化方案进行登录认证缓存）
 - 路由跳转功能
 - vuex与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS处理样式文件：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
 - 网络请求使用fetch
 - mock数据服务
+
+[点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
 ## Build Setup
 
@@ -59,7 +61,7 @@ src：项目源码。开发的时候代码写在这里。
  ```
  
  ## todo
- - vuex与localstorage的持久化方案（待改进）
+ - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - 国际化
  - 封装fetch服务
  - 引入图表插件
