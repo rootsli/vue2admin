@@ -1,0 +1,56 @@
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #f0f2f5;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #9598a7;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
+  color: #3074bd;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right !important;
+}
+
+.height100 {
+  height: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
