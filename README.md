@@ -1,6 +1,6 @@
 # vue2admin
 
-> 基于vue2 + vue-router + vuex + [element-ui](http://element.eleme.io/) 实现的一个后台管理系统基础框架。
+> 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) 实现的一个后台管理系统基础框架。
 
 #### 已实现功能：
 - 基础框架
