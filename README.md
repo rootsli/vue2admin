@@ -3,12 +3,13 @@
 > 基于vue2 + vue-router + vuex + [element-ui](http://element.eleme.io/) 实现的一个后台管理系统基础框架。
 
 #### 已实现功能：
+- 基础框架
 - 登录功能
 - 路由跳转功能
-- mock数据服务
+- vuex与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS处理样式文件：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
 - 网络请求使用fetch
-- vuex与localstorage的持久化方案
+- mock数据服务
 
 ## Build Setup
 

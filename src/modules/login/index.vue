@@ -57,12 +57,12 @@
         },
         rules: {
           name: [
-            {type: 'number', required: true, message: '请输入登录ID', trigger: 'blur'},
+            {type: 'number', required: true, message: '请输入登录ID，必须为数字', trigger: 'blur'},
             {validator: checkName, trigger: 'blur'}
           ],
           pass: [
             {required: true, message: '请输入密码', trigger: 'blur'},
-            {min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur'}
+            {min: 3, max: 15, message: '长度为 3~15 个字符', trigger: 'blur'}
           ]
         }
       };
