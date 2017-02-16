@@ -1,6 +1,6 @@
-# vue2admin
+# vue2admin-v2
 
-> 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) 实现的一个后台管理系统基础框架。
+> 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
 
 #### 已实现功能：
 - 基础框架
@@ -14,7 +14,7 @@
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
 ```
-说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分大中型项目中必须的插件服务和项目逻辑架构
+说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分大中型项目中必须的插件服务和项目逻辑架构。实现了拿来即用。
 ```
 
 ## Build Setup
@@ -29,12 +29,19 @@ npm run dev
 # build for production with minification
 npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
+
 # run unit tests
 npm run unit
+
+# run e2e tests
+npm run e2e
 
 # run all tests
 npm test
 ```
+
 
 ## 工程目录结构
 ```
@@ -65,9 +72,9 @@ src：项目源码。开发的时候代码写在这里。
  ```
  
  ## todo
+ 
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - 国际化
  - 封装fetch服务
  - 引入图表插件
  - 大项目打包方案webpack code-splitting
-
