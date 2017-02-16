@@ -1,4 +1,4 @@
-# vue2admin-v2
+# vue2admin
 
 > 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
 
