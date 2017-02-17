@@ -3,13 +3,14 @@
 > 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
 
 #### 已实现功能：
-- 基础框架
+- 基础框架（完全的组件化架构）
 - 登录功能（利用vuex与localstorage的持久化方案进行登录认证缓存）
-- 路由跳转功能
+- 路由功能
+- 基于vuex的状态管理
 - vuex与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
-- PostCSS处理样式文件：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
-- 网络请求使用fetch
-- mock数据服务
+- PostCSS支持：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
+- 基于fetch的网络请求
+- 支持mock数据服务
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
@@ -69,12 +70,18 @@ src：项目源码。开发的时候代码写在这里。
  |--apis # 服务层ajax请求服务
  |    |--mock # api数据mock服务
  |--utils # 公共库函数
+ |    |--request.js # 网络请求服务，实现了对fetch的二次封装（目前只封装了get,post；实际项目中可按着示例封装其他请求）
+
  ```
  
  ## todo
  
+ - 关键代码注释说明
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - 国际化
- - 封装fetch服务
- - 引入图表插件
+ - 封装fetch服务，fetch服务的拦截，fetch与Service Workers的研究
  - 大项目打包方案webpack code-splitting
+ - 打包的md5串太长
+ - 引入图表插件
+ - 热部署
+ 
