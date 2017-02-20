@@ -12,8 +12,8 @@ import mock from './apis/mock'
 import routes from './config/routes'
 import App from './App'
 
-Vue.use(VueRouter)
-Vue.use(ElementUI)
+Vue.use(VueRouter) //路由注册
+Vue.use(ElementUI) //UI框架注册
 
 const router = new VueRouter({
   routes
@@ -23,20 +23,18 @@ router.beforeEach(({meta, path}, from, next) => {
   let {auth = true} = meta
   let isLogin = Boolean(store.state.login.tokens != '') //true用户已登录， false用户未登录
 
-  console.log('isLogin = ' + isLogin + ';path=' + path)
-
   if (auth && !isLogin && path !== '/login') {
     return next({path: '/login'})
   }
 
-  if (isLogin && (path == '/login' || path == '/')) { //已登录过，则直接跳转到主页
+  if (isLogin && (path == '/login' || path == '/')) { //已登录过，则跳转到主页
     return next({path: '/home/page1'})
   }
 
   next()
 })
 
-mock.start() //启动mock服务
+mock.start() //启动ajax mock服务
 
 new Vue({
   el: '#app',

@@ -76,7 +76,6 @@ src：项目源码。开发的时候代码写在这里。
  
  ## todo
  
- - 关键代码注释说明
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - 国际化
  - 封装fetch服务，fetch服务的拦截，fetch与Service Workers的研究

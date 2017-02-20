@@ -18,10 +18,10 @@ const getters = {
 const actions = {
   login({commit, state}, user){
     tokens.getTokens(user.name, user.pass).then((data) => {
-      //处理请求success
+      //success
       commit(LOGIN_IN, {tokens: data.tokens})
     }, (error) => {
-      //处理请求fail
+      //fail
       commit(LOGIN_IN, {tokens: ''})
     })
   },
