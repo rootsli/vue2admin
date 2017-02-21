@@ -9,13 +9,13 @@
 - 基于vuex的状态管理
 - vuex与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS支持：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
-- 基于fetch的网络请求
+- 基于fetch的网络服务
 - 支持mock数据服务
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
 ```
-说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分大中型项目中必须的插件服务和项目逻辑架构。实现了拿来即用。
+说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分前端项目必须的插件服务和项目逻辑架构。真正实现了拿来即用。
 ```
 
 ## Build Setup
@@ -78,9 +78,8 @@ src：项目源码。开发的时候代码写在这里。
  
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - 国际化
- - 封装fetch服务，fetch服务的拦截，fetch与Service Workers的研究
+ - fetch与Service Workers的本地缓存方案
  - 大项目打包方案webpack code-splitting
- - 打包的md5串太长
  - 引入图表插件
  - 热部署
  
