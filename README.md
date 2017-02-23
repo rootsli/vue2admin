@@ -7,15 +7,17 @@
 - 登录功能（利用vuex与localstorage的持久化方案进行登录认证缓存）
 - 路由功能
 - 基于vuex的状态管理
-- vuex与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
+- vuex2与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS支持：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
 - 基于fetch的网络服务
 - 支持mock数据服务
+- 使用webpack2处理模块化，模块依赖，静态资源优化，模块打包和Hash指纹等整个编译过程，一个命令，即可完成整个项目的构建编译
+
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
 ```
-说明：项目生成的UI虽然只是一个简单的框架，但是已经集成了大部分前端项目必须的插件服务和项目逻辑架构。真正实现了拿来即用。
+说明：项目框架已经集成了大部分前端项目必须的插件服务和项目逻辑架构，可以拿来即用。
 ```
 
 ## Build Setup
