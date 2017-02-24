@@ -11,13 +11,12 @@ vue2-admin - A scaffolding base Vue2.js
 - 完全的基于组件化的架构
 - 登录功能（利用vuex与localstorage的持久化方案进行登录认证缓存）
 - 多级路由支持
-- 基于vuex2的状态管理
+- 基于vuex2的状态管理（开发时建议安装chrome插件vue.js devtools跟踪状态）
 - vuex2与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS支持：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
 - 基于fetch的网络服务（源码路径：src\utils\request.js）
 - 支持mock数据服务（mock示例路径：src\apis\mock）
-- 基于webpack2的构建编译：支持模块依赖，静态资源优化，模块打包和Hash指纹等编译功能，一个命令，即可完成整个项目的构建编译
-
+- 基于webpack2的开发构建编译：支持开发阶段的HRM，支持模块依赖，静态资源优化，模块打包和Hash指纹等编译功能，一个命令，即可完成整个项目的构建编译
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
@@ -26,6 +25,12 @@ vue2-admin - A scaffolding base Vue2.js
 ```
 
 ## Build Setup
+
+```
+依赖环境：运行项目前请确认本地已安装nodejs和npm。依赖的版本如下：
+- "node": ">= 4.0.0"
+- "npm": ">= 3.0.0"
+```
 
 ``` bash
 # install dependencies
@@ -84,9 +89,8 @@ src：项目源码。开发的时候代码写在这里。
  ## todo
  
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
- - 国际化
  - fetch与Service Workers的本地缓存方案
  - 大项目打包方案webpack code-splitting
- - 引入图表插件
- - 热部署
+ - 国际化
+ - 图表插件
  
