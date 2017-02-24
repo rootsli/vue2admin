@@ -7,16 +7,16 @@ vue2-admin - A scaffolding base Vue2.js
 
 > 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
 
-#### 已实现功能：
-- 基础框架（完全的组件化架构）
+#### 框架能力：
+- 完全的基于组件化的架构
 - 登录功能（利用vuex与localstorage的持久化方案进行登录认证缓存）
-- 路由功能
-- 基于vuex的状态管理
+- 多级路由支持
+- 基于vuex2的状态管理
 - vuex2与localstorage的持久化方案（目前持久化方案不能限定过期时间，待优化）
 - PostCSS支持：支持自动拼装前缀（autoprefixer插件），支持最新css语法（postcss-cssnext插件），支持@import方式引入css。具体示例请见项目源码：src\modules\page1\index.vue
-- 基于fetch的网络服务
-- 支持mock数据服务
-- 使用webpack2处理模块化，模块依赖，静态资源优化，模块打包和Hash指纹等整个编译过程，一个命令，即可完成整个项目的构建编译
+- 基于fetch的网络服务（源码路径：src\utils\request.js）
+- 支持mock数据服务（mock示例路径：src\apis\mock）
+- 基于webpack2的构建编译：支持模块依赖，静态资源优化，模块打包和Hash指纹等编译功能，一个命令，即可完成整个项目的构建编译
 
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
