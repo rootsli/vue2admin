@@ -1,6 +1,10 @@
 # vue2admin
 
 > 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
+========================================================
+<p align="center">
+  <a href="https://github.com/rootsli/vue2admin"><img src="https://travis-ci.org/rootsli/vue2admin.svg?branch=master?style=flat-square" alt="Travis"></a>
+</p>
 
 #### 已实现功能：
 - 基础框架（完全的组件化架构）
