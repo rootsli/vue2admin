@@ -1,12 +1,9 @@
 ![](https://github.com/rootsli/vue2admin/blob/master/doc/img/logo.png)
 
-vue2-admin - A background manager scaffolding base Vue2.js
+<span style="font-size:14px;margin-left:16px;">A background manager scaffolding base Vue2.js</span>
 ========================================================
 
-[![Vuejs](https://img.shields.io/badge/%20Powered%20by-Vuejs%202.1.x%20-brightgreen.svg)](https://github.com/vuejs/vue) 
-[![Build Status](https://travis-ci.org/rootsli/vue2admin.svg?branch=master)](https://travis-ci.org/rootsli/vue2admin)  
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
-[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+[![Vuejs](https://img.shields.io/badge/%20Powered%20by-Vuejs%202.1.x%20-brightgreen.svg)](https://github.com/vuejs/vue) [![Build Status](https://travis-ci.org/rootsli/vue2admin.svg?branch=master)](https://travis-ci.org/rootsli/vue2admin) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 > 基于vue2 + vue-router + vuex + fetch + PostCSS + [element-ui](http://element.eleme.io/) + webpack2 实现的一个后台管理系统基础框架。
 
