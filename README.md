@@ -1,4 +1,4 @@
-![](https://github.com/rootsli/vuea2dmin/blob/master/doc/img/logo.png)
+![](https://github.com/rootsli/vue2admin/blob/master/doc/img/logo.png)
 
 vue2-admin - A background manager scaffolding base Vue2.js
 ========================================================
