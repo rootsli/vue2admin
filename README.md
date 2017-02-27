@@ -90,7 +90,7 @@ src：项目源码。开发的时候代码写在这里。
  
  - vuex与localstorage的持久化方案（待改进：只对指定的vuex state内容进行持久化，并可指定过期时间，目前待选方案：https://github.com/liesislukas/localstorage-ttl，https://github.com/WQTeam/web-storage-cache）
  - fetch与Service Workers的本地缓存方案
- - 大项目打包方案webpack code-splitting
+ - webpack大项目打包方案：On demand code-splitting示例
  - 国际化
  - 图表插件
  
