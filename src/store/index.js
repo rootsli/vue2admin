@@ -30,6 +30,6 @@ export default new Vuex.Store({
   plugins: debug ? [createLogger(), createPersistedState({
       paths: ['login.tokens'],
       getState: (key) => Cookies.getJSON(key),
-      setState: (key, state) => Cookies.set(key, state, {expires: 365}) //expires->cookie过期时间，单位为天
+      setState: (key, state) => Cookies.set(key, state, {expires: 3}) //expires->cookie过期时间，单位为天
     })] : [createPersistedState()]
 })
