@@ -17,6 +17,12 @@ Vue.use(Vuex)
 
 const debug = process.env.NODE_ENV !== 'production'
 
+let persistedState = {
+  paths: ['login.tokens'],
+  getState: (key) => Cookies.getJSON(key),
+  setState: (key, state) => Cookies.set(key, state, {expires: 3}) //expires->cookie过期时间，单位为天
+}
+
 export default new Vuex.Store({
   state,
   mutations,
@@ -27,9 +33,5 @@ export default new Vuex.Store({
     login
   },
   strict: debug,
-  plugins: debug ? [createLogger(), createPersistedState({
-      paths: ['login.tokens'],
-      getState: (key) => Cookies.getJSON(key),
-      setState: (key, state) => Cookies.set(key, state, {expires: 3}) //expires->cookie过期时间，单位为天
-    })] : [createPersistedState()]
+  plugins: debug ? [createLogger(), createPersistedState(persistedState)] : [createPersistedState(persistedState)]
 })
