@@ -86,6 +86,10 @@ src：项目源码。开发的时候代码写在这里。
 
  ```
  
+ ## 页面结构
+ 
+ ![页面结构](https://github.com/rootsli/vue2admin/blob/master/doc/img/vue2admin.png)
+ 
  ## todo
   
  - fetch与Service Workers的本地缓存方案
