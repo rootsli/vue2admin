@@ -21,7 +21,7 @@ vue2-admin - A scaffolding base Vue2.js
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
 ```
-说明：项目框架已经集成了大部分前端项目必须的插件服务和项目逻辑架构，可以拿来即用。
+说明：项目框架已经集成了大部分前端项目必须的插件服务和项目逻辑架构，可以拿来即用。让框架尽量简单，逻辑尽量清晰，编译构建过程完全可定制，也是本框架追求的目标之一。
 ```
 
 ## Build Setup
@@ -30,6 +30,8 @@ vue2-admin - A scaffolding base Vue2.js
 依赖环境：运行项目前请确认本地已安装nodejs和npm。依赖的版本如下：
 - "node": ">= 4.0.0"
 - "npm": ">= 3.0.0"
+
+※ 开发和运行时阶段依赖的其他包请到package.json中查看
 ```
 
 ``` bash
@@ -91,11 +93,19 @@ src：项目源码。开发的时候代码写在这里。
  
  ![页面结构](https://github.com/rootsli/vue2admin/blob/master/doc/img/vue2admin.png)
  
- 
  ## todo
-  
- - fetch与Service Workers的本地缓存方案
  - webpack大项目打包方案：On demand code-splitting示例
+ ```
+Promise.all([
+        import('./module1.js'),
+        import('./module2.js'),
+        import('./module3.js'),
+    ])
+    .then(([module1, module2, module3]) => {
+        ···
+    });
+```
+ - fetch与Service Workers的本地缓存方案
  - 国际化
  - 图表插件
  
