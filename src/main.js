@@ -11,6 +11,7 @@ import mock from './apis/mock'
 
 import routes from './config/routes'
 import App from './App'
+import splitting from './modules/code-splitting-demo'
 
 Vue.use(VueRouter) //路由注册
 Vue.use(ElementUI) //UI框架注册
@@ -35,6 +36,8 @@ router.beforeEach(({meta, path}, from, next) => {
 })
 
 mock.start() //启动ajax mock服务
+
+splitting.start() //demo：运行webpack2 code splitting示例
 
 new Vue({
   el: '#app',

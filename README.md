@@ -17,6 +17,7 @@ vue2-admin - A scaffolding base Vue2.js
 - 基于fetch的网络服务（源码路径：src\utils\request.js）
 - 支持mock数据服务（mock示例路径：src\apis\mock）
 - 基于webpack2的开发构建编译：支持开发阶段的HRM，支持模块依赖，静态资源优化，模块打包和Hash指纹等编译功能，一个命令，即可完成整个项目的构建编译
+- 提供了一个webpack大项目打包方案：On demand code-splitting的示例，请见目录：src\modules\code-splitting-demo
 
 [点此查看运行效果](http://vue2admin.duapp.com)（用户名密码不限）
 
@@ -88,23 +89,11 @@ src：项目源码。开发的时候代码写在这里。
 
  ```
  
- 
  ## 页面结构
  
  ![页面结构](https://github.com/rootsli/vue2admin/blob/master/doc/img/vue2admin.png)
  
  ## todo
- - webpack大项目打包方案：On demand code-splitting示例
- ```
-Promise.all([
-        import('./module1.js'),
-        import('./module2.js'),
-        import('./module3.js'),
-    ])
-    .then(([module1, module2, module3]) => {
-        ···
-    });
-```
  - fetch与Service Workers的本地缓存方案
  - 国际化
  - 图表插件

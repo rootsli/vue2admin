@@ -1,22 +1,5 @@
 /**
  * Created by lichb on 2017/2/9.
- *
- * 调用示例：
- * let formData = new FormData();
- *formData.append("id",1060);
- *
- *HTTPUtil.post(url,formData,headers).then((json) => {
- * //处理 请求success
- *  	if(json.code === 0 ){
- *          //我们假设业务定义code为0时，数据正常
- *      }else{
- *           //处理自定义异常
- *          this.doException(json);
- *      }
- * },(json)=>{
- *   //处理请求fail
- *
- * })
  */
 import 'whatwg-fetch'
 
