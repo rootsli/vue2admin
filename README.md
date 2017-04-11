@@ -36,7 +36,9 @@ vue2-admin - A scaffolding base Vue2.js
 ```
 
 ``` bash
-# install dependencies
+# 安装依赖-国内用户推荐使用npm淘宝镜像，设置方法：
+# step1.npm config set registry https://registry.npm.taobao.org 
+# step2.npm info underscore 
 npm install
 
 # serve with hot reload at localhost:8080
