@@ -10,7 +10,7 @@ import {
   SpriteMaterial,
   Object3D,
   Sprite,
-  Math2
+  Math as Math2
 } from 'three';
 const SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;     // 圆点间隔、x轴方向个数、y轴方向个数
 const waveStep = 0.04;              // 波动速度
