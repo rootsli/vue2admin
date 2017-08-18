@@ -9,6 +9,7 @@ vue2-admin - A scaffolding base Vue2.js
 
 #### 框架能力：
 - 完全的基于组件化的架构
+- 基于组件的CSS命名空间独立，不相互污染
 - 登录功能（利用vuex与cookie的持久化方案进行登录认证缓存）
 - 多级路由支持
 - 基于vuex2的状态管理（开发时建议安装chrome插件vue.js devtools跟踪状态）
